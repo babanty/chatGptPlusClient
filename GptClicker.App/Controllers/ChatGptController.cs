@@ -10,7 +10,7 @@ namespace GptClicker.App.Controllers;
 [Route("[controller]")]
 public class ChatGptController : ControllerBase
 {
-   public string FolderPath = @"C:\Users\Anastasiia\Desktop\clicker";
+    public string FolderPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\..\AutoitScripts"));
 
     [HttpPost()]
     public async Task<string> SendMessage([FromBody] string text)
