@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "example",
+  "version": "1.0",
+  "description": "Описание вашего расширения",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["clipboardWrite", "activeTab", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "icons": {
+    "16": "icon.png"
+  }
+}
